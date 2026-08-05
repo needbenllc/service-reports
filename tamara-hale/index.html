@@ -124,6 +124,9 @@
   .highlight { background: #FFF8F0; border-left: 4px solid var(--orange); padding: 14px; border-radius: 0 8px 8px 0; margin-bottom: 16px; }
   .highlight p { font-size: 14px; line-height: 1.6; margin-bottom: 0; }
   
+  .success { background: #F0F8F3; border-left: 4px solid var(--green); padding: 14px; border-radius: 0 8px 8px 0; margin-top: 12px; margin-bottom: 12px; }
+  .success strong { color: var(--green); }
+  
   .note { background: #F0F8F3; border-left: 4px solid var(--green); padding: 14px; border-radius: 0 8px 8px 0; margin-top: 12px; margin-bottom: 12px; }
   .note strong { color: var(--green); }
   
@@ -136,6 +139,8 @@
   .checklist li::before {
     content: "✓"; position: absolute; left: 0; color: var(--green); font-weight: 700; font-size: 18px;
   }
+  
+  .timestamp { font-size: 13px; color: var(--muted); font-weight: 600; margin-top: 6px; }
 </style>
 </head>
 <body>
@@ -155,7 +160,7 @@
       <option value="new">New</option>
       <option value="estimate">Estimate Provided</option>
       <option value="approved">Estimate Approved</option>
-      <option value="in-progress">Work In Progress</option>
+      <option value="in-progress" selected>Work In Progress</option>
       <option value="complete">Complete</option>
       <option value="delivered">Delivered</option>
       <option value="paid">Paid</option>
@@ -216,49 +221,53 @@
   <h2><span class="badge">02</span> Original Service Request</h2>
   <p>Following a storm-related power outage on July 23, the customer's Lenovo ThinkPad T480s would no longer power on. The customer works from home and requested urgent assistance recovering the computer and migrating everything possible to a new Lenovo Yoga 7.</p>
 
-  <h2><span class="badge">03</span> What Happened</h2>
-  <p>During the night of August 3–4, while the final migration was running, the Samsung 512GB NVMe SSD failed completely. The drive is no longer readable by any means available on the bench. However, the first migration run did succeed before the drive failed, and files from that migration may still be recoverable.</p>
+  <h2><span class="badge">03</span> What Happened & Recovery</h2>
+  <p>During the night of August 3–4, while the final migration was running, the Samsung 512GB NVMe SSD failed completely. However, the first migration run had succeeded before the drive failed.</p>
   
-  <div class="highlight">
-    <p><strong>The Good News:</strong> A system restore is currently running to recover files from the first successful migration. If those files are present, the project will be completed and the customer will have a fully working machine with all original data.</p>
+  <div class="success">
+    <p><strong>August 4, 8:59 PM:</strong> Files successfully recovered from the first migration. All data has been verified and backed up to a 1TB external drive.</p>
   </div>
 
-  <h2><span class="badge">04</span> What Comes Next</h2>
+  <h2><span class="badge">04</span> Completion Plan</h2>
+  <p>The computer is being fully restored to clean it of the OneDrive configuration issues and any residual errors from multiple restores. Here's what's happening:</p>
   <ol class="checklist">
-    <li>Back up all recovered files to a thumb drive</li>
-    <li>Reset the new computer clean and build a fresh Windows profile</li>
-    <li>Uninstall OneDrive completely</li>
-    <li>Restore all files into a single folder on the Desktop, outside OneDrive</li>
-    <li>Copy all iTunes music from the original folders</li>
-    <li>Install iTunes, Dropbox, Slack, Avast Premium, and Adobe Acrobat Reader</li>
-    <li>Connect and confirm the printer</li>
-    <li>Remove McAfee and all "Pascuali Interiors" references</li>
-    <li>Set up Outlook for work email</li>
+    <li>Backed up all recovered files to 1TB external hard drive</li>
+    <li>Creating full system backup of current state</li>
+    <li>Fresh Windows install for clean, error-free environment</li>
+    <li>Restore all files from backup to the new Windows installation</li>
+    <li>Complete all items from your handwritten request list</li>
+    <li>Remove all unwanted software (McAfee, Pascuali Interiors, etc.)</li>
+    <li>Install Goode professional backup program</li>
+    <li>Final verification and handoff</li>
   </ol>
 
+  <h2><span class="badge">05</span> Your Handwritten Requests — All Being Completed</h2>
+  <ul class="checklist">
+    <li>Copy all iTunes music from the original folders</li>
+    <li>Install iTunes, Dropbox, Slack, Chrome (default browser)</li>
+    <li>Install Avast Premium and Adobe Acrobat Reader</li>
+    <li>Connect and verify printer</li>
+    <li>Remove McAfee completely</li>
+    <li>Remove all "Pascuali Interiors" references</li>
+    <li>Everything saves to Documents folder, outside OneDrive</li>
+    <li>Set up Outlook for work email</li>
+  </ul>
+
   <div class="note">
-    <p><strong>New:</strong> A free, professional-grade backup program called <strong>Goode</strong> will be installed on the new computer. It provides excellent automated backups and will help prevent data loss in the future.</p>
+    <p><strong>New Benefit:</strong> Goode professional-grade backup program is being installed. This will provide automated backups going forward and help prevent data loss in the future.</p>
   </div>
 
-  <h2><span class="badge">05</span> Office & Payment</h2>
+  <h2><span class="badge">06</span> Office & Payment</h2>
   <p>The customer's old Microsoft Office version will not load on the new machine. The recovery code did not work. The correct one-time-purchase option is <strong>Office Home & Business 2024</strong> at $249.99 — it includes Outlook, which is required for work email.</p>
   <p>Do not purchase the cheaper "Office Home 2024" — it does not include Outlook.</p>
 
-  <h2><span class="badge">06</span> Your Questions Answered</h2>
+  <h2><span class="badge">07</span> Your Questions Answered</h2>
   <p><strong>Can the new computer use the same old charging bricks?</strong> Yes. Both of your Lenovo 65W USB-C chargers were tested and both work correctly with the new Yoga 7. Nothing new needs to be purchased.</p>
   
   <p><strong>What should I do with my old computer?</strong> Recycle it. The machine now has two separate hardware failures — the charging port and the storage drive — so repair is not worth pursuing.</p>
 
-  <h2><span class="badge">07</span> Recovery Position</h2>
-  <p>Three sources of your data still exist:</p>
-  <ul class="checklist">
-    <li>The new computer, at the restore point of the first successful migration</li>
-    <li>Microsoft OneDrive (via web browser — not through the computer)</li>
-    <li>Your personal Dropbox account</li>
-  </ul>
-
   <h2><span class="badge">08</span> Billing</h2>
-  <p>A deposit of $125.00 has been paid. If the recovered files are present, the project will be completed at no additional cost. If the files cannot be recovered, a full refund will be issued.</p>
+  <p>A deposit of $125.00 has been paid. The project is being completed at no additional cost for the recovery and completion work. The computer will be delivered fully configured per your specifications.</p>
 
   <div style="margin-top:40px; padding-top:20px; border-top:1px solid var(--line); text-align:center; font-size:13px; color:var(--muted)">
     <p><strong>NeedBen Computer &amp; Tech Support</strong><br>You don't need a geek or a nerd, You just NEED BEN!<br>843-321-9269 · help@needben.com · www.NeedBen.com</p>
