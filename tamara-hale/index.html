@@ -126,6 +126,11 @@
   .abox p:last-child { margin-bottom: 0; }
   .abox a { color: #1552B0; }
   
+  .benbox { background: #FFF8F0; border-left: 4px solid var(--orange); padding: 14px; border-radius: 0 6px 6px 0; margin-bottom: 12px; }
+  .benbox strong { color: var(--orange); }
+  .benbox p { margin-bottom: 8px; font-size: 14px; line-height: 1.6; }
+  .benbox p:last-child { margin-bottom: 0; }
+  
   .commitment { background: var(--navy); color: #fff; border-radius: 8px; padding: 28px; margin-top: 32px; position: relative; overflow: hidden; }
   .commitment::after { content: ""; position: absolute; top: -20%; right: -14%; width: 34%; height: 150%; background: var(--orange); transform: skewX(-16deg); }
   .commitment > * { position: relative; z-index: 1; }
@@ -236,7 +241,30 @@
       <li>No restoration errors at completion</li>
     </ul>
 
-    <h2><div class="badge">06</div> Your Handwritten Requests</h2>
+    <h2><div class="badge">06</div> BitLocker Encryption</h2>
+    <p>During the final backup process, Windows detected that BitLocker encryption was enabled on your computer. BitLocker was causing the backup to run significantly slower than normal. <strong>I disabled BitLocker to complete the backup at full speed and informed you of this change.</strong></p>
+    
+    <div class="benbox">
+      <p><strong>What is BitLocker?</strong> BitLocker is Windows encryption that protects your data if someone gains physical access to your computer. It encrypts everything on your hard drive, making it unreadable without your encryption key.</p>
+    </div>
+
+    <div class="benbox">
+      <p><strong>Benefits of BitLocker:</strong> Your data is protected if the computer is stolen or lost. Even if someone removes the hard drive, they cannot access your files without the encryption key. This is especially valuable if you use your computer in public places or travel frequently.</p>
+    </div>
+
+    <div class="benbox">
+      <p><strong>Drawbacks of BitLocker:</strong> It adds a small performance overhead to disk operations (slowing backup speeds, as you just experienced). It requires a recovery key to be saved and accessible. If you forget your password and lose the recovery key, your data becomes unrecoverable.</p>
+    </div>
+
+    <p style="margin-top:14px"><strong>You now have two shortcuts on your Desktop to manage BitLocker:</strong></p>
+    <ul class="checklist">
+      <li><strong>BitLocker on/Off</strong> — Double-click this to toggle BitLocker on or off. Windows will ask you to confirm your choice.</li>
+      <li><strong>BitLocker Recovery Key</strong> — This is a backup copy of your encryption key. Keep this file safe. If you ever need to recover your computer, you will need this key.</li>
+    </ul>
+    
+    <p style="margin-top:14px">You can decide whether to keep BitLocker enabled based on your needs. If you travel frequently or work with sensitive data, BitLocker protection is worth the small performance cost. If performance is your priority, leaving it off is fine.</p>
+
+    <h2><div class="badge">07</div> Your Handwritten Requests</h2>
     <p><strong>Completed by Technician:</strong></p>
     <ul class="checklist">
       <li>McAfee completely removed</li>
@@ -246,13 +274,13 @@
     <p style="margin-top:14px"><strong>Deferred to You for Independent Installation:</strong></p>
     <p style="color:var(--muted);font-style:italic;font-size:14px">At your request, the following will be installed by you after delivery: Google Chrome, Dropbox, Slack, iTunes (with your music), Avast Premium, Adobe Reader, Microsoft 365/Outlook, and Printer setup.</p>
 
-    <h2><div class="badge">07</div> Microsoft Account & Security</h2>
+    <h2><div class="badge">08</div> Microsoft Account & Security</h2>
     <p><strong>Account:</strong> hale_tamara@yahoo.com</p>
     <p><strong>Windows PIN:</strong> 4465 (matched to your previous computer for familiarity)</p>
     <p><strong>OneDrive:</strong> Reconfigured to limit synchronization. A desktop shortcut has been added for easy access to your cloud storage.</p>
     <p style="margin-top:14px;padding:12px;background:var(--panel);border-radius:6px;font-size:13px"><strong>Security Note:</strong> The customer supplied her sign-in PIN and account password at intake. These credentials are deliberately not reproduced in this report, were used only for this project, and are not retained. As a routine precaution, change your account password once the computer is returned.</p>
 
-    <h2><div class="badge">08</div> Your Questions — Answered</h2>
+    <h2><div class="badge">09</div> Your Questions — Answered</h2>
     
     <div class="qbox">Can the new computer use the same old charging bricks?</div>
     <div class="abox">
@@ -273,7 +301,7 @@
       <p style="font-size:13px;color:var(--muted);margin-top:12px">Send your existing product code over and it will be tried first. If it will not activate, purchase the above whenever you are ready — Ben can activate it for you, or you can activate it yourself. The trade-off with a one-time purchase is that it stays on that version and does not upgrade to future releases. Until you retire in December 2026, your employer's Microsoft 365 licence covers you.</p>
     </div>
 
-    <h2><div class="badge">09</div> Billing & Invoice</h2>
+    <h2><div class="badge">10</div> Billing & Invoice</h2>
     <p><strong>Original Deposit:</strong> $125.00 (paid July 26, 2026)</p>
     <p><strong>Final Cost:</strong> No additional charges. Project completed against the deposit paid.</p>
     <p><strong>Complimentary Items Included:</strong> 1TB USB drive (approximately $89 retail value)</p>
