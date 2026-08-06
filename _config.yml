@@ -1,0 +1,2 @@
+# GitHub Pages configuration for NeedBen Service Reports
+exclude: [node_modules, .jekyll-cache, .git, .gitignore]
